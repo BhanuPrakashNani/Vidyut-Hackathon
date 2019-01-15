@@ -1,1 +1,1 @@
-# Vidyut- Mailroom Portal
+# Amrita Mailroom Portal
