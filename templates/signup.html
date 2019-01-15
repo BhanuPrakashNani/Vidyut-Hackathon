@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+  <h2>Sign up</h2>
+
+
+
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" method="post">
+                    {% csrf_token %}
+
+
+					{{ form.as_p }}
+
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" type="submit">
+							Sign Up
+						</button>
+					</div>
+
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+{% endblock %}

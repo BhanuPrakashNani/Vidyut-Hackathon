@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+	<div id="header-wrapper">
+
+
+
+		<!-- Banner -->
+			<div id="banner">
+				<div class="container">
+				</div>
+			</div>
+		<!-- /Banner -->
+
+	</div>
+
+	<!-- Main -->
+		<div id="main">
+
+			<div class="container">
+
+				<div class="row">
+					<section>
+            <div class ="card">
+            <label for = "from"> from </label>
+            <input type="date">  </input>
+
+              <label for = "to"> to </label>
+              <input type="date">  </input>
+
+
+              </div>
+            <header>
+							<h2>Orders</h2>
+
+                        	</header>
+					</section>
+				</div>
+					<div>
+								<table id = "orders">
+									<tr>
+											<th><b> Name</b></th>
+											<th><b> Roll No </th>
+											<th><b> Service </th>
+											<th><b> Date </th>
+											<th><b> Token No</b> </th>
+									</tr>
+                       {% for user_info in object_list %}
+									<tr>
+									    <td>{{ user_info.name }}</td>
+									    <td>{{ user_info.roll_no }}</td>
+									    <td>{{ user_info.service }}</td>
+                                        <td>{{ user_info.date }}</td>
+                                        <td> {{ user_info.token_no }}</td>
+                                    </tr>
+                        {% endfor %}
+								</table>
+
+					</div>
+			</div>
+		</div>
+	<!-- /Main -->
+
+	<!-- Featured -->
+{#            <form method="post">#}
+{#                <button type="submit" name="Taken"><a href="{% url 'RecievedStatus' user_info.pk %}">Taken</a> </button>#}
+{#            </form>#}
+	<!-- /Featured -->
+
+
+{% endblock %}

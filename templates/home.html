@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+  Hi {{ user.username }}!
+   <div>
+       <h1 style="text-align: center"><a href="{% url 'alldata' %}">all data</a></h1>
+{#        <a href="{% url 'personaldata' %}">personal data</a>#}
+       <br>
+       </br>
+       <h1 style="text-align: center"><a href="{% url 'coddata' %}">Cod</a></h1>
+
+   </div>
+
+
+  <p><a href="{% url 'logout' %}">logout</a></p>
+{% else %}
+    <div>
+    <h1 style="text-align: center"><a href="{% url 'login' %}">login</a></h1> |
+    <h1 style="text-align: center"><a href="{% url 'signup' %}">signup</a></h1>
+    </div>
+    <div style="padding-bottom:0px ">
+        <h2 style="text-align: center"><a href="{% url 'feedback' %}">Feedback</a> </h2>
+    </div>
+{% endif %}
+{% endblock %}

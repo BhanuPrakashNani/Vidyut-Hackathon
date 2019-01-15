@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+
+<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100">
+				<form style="text-align: center" class="login100-form validate-form" method="post">
+					<span class="login100-form-logo">
+						<i class="zmdi zmdi-landscape"></i>
+					</span>
+                    {% csrf_token %}
+					{{ form.as_p }}
+
+
+
+					<div class="container-login100-form-btn">
+						<button type="submit">Login</button>
+					</div>
+
+                    <div class="container-login100-form-btn">
+                        <button><a href="{% url 'signup' %}">signup</a></button>
+					</div>
+
+
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+{% endblock %}

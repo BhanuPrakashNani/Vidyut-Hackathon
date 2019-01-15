@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% for i in object_list %}
+        <ul>
+            <li>{{ i.roll_no }}</li>
+            <li>{{ i.tracking_id }}</li>
+            <li>{{ i.payment }}</li>
+            <li>{{ i.eta }}</li>
+        </ul>
+        <button type="submit"><a href="{% url 'codmail'%}">Paid</a> </button>
+    {% endfor %}
+{% endblock %}
