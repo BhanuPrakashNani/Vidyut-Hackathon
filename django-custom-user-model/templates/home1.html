@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+  Hi {{ user.username }}!
+   <div>
+        <a href="{% url 'packetdata' %}">new packet</a>
+    <p><a href="{% url 'alldata' %}">All data</a> </p>
+   <p><a href="{% url 'codNotifications' %}">Cod Notifications</a> </p>
+   </div>
+
+
+
+
+
+{% endblock %}
