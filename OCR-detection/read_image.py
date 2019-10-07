@@ -15,7 +15,7 @@ print(l[i+1])
 a = l[i+1]
 for i in l:
     if "Invoice Number:" in i:
-        print("Invoiec Number: " + i[15:])
+        print("Invoice Number: " + i[15:])
 b = i[15:]
 print(l[0])
 c = l[0]
