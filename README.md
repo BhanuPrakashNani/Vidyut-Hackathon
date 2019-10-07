@@ -1,6 +1,7 @@
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 # Amrita Mailroom Portal(AMP)
+A project by Bhanu prakash nani.
 
 ### Issues
 The current mail room system in our college has few issues:
