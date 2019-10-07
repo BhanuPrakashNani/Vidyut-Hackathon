@@ -4,7 +4,7 @@
 A project by Bhanu prakash nani.
 
 ### Issues
-The current mail room system in our college has few issues:
+The current mail room system in our college has multiple issues:
 * There is lot of crowd as the students and staff come frequently to check of their package has arrived not being aware of the time of delivery.
 * Lot of paperwork. The package arrival logs are noted down in a register which is time consuming and there are chances that the register paper might get torn or something related.
 * Sometimes students miss out their names while checking the register. As a result, their packages get returned.
